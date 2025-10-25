@@ -19,6 +19,6 @@ In my experiment I used 13 generations to evaluate the reward for each perturbed
 
 The results were surprising, since it's hard to get RL to work in such a short time. As a comparison, GRPO for simple tasks on a 0.5B model could take as long as 24 hours on 8 A100 GPUs. https://huggingface.co/docs/trl/main/en/grpo_trainer
 
-Another advantage is that the hyperparameters required for ES are much less than those required for GRPO.
+Another advantage is that ES requires much less hyperparameters than GRPO.
 
 Another thing to mention is that the performance on the multiplication task I tested ES on was very dependent on prompting, and it is possible that the task was very easy for "RL-ing," and thus the performance reached in my experiment doesn't reflect the performance of ES in general.
